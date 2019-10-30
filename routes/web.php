@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('contacto', function () {
+    return view('contacto');
+});
+Route::get('blog/{id}', function ($id) {
+    return view('blog', ['id'=> $id]);
+});
